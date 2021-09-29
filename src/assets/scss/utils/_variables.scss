@@ -1,0 +1,27 @@
+@use "functions" as *;
+
+// Colors
+// Primary
+
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+// Colors Pallete
+$colors: (
+  "violet": $violet,
+  "soft-magenta": $soft-magenta,
+);
+
+// Font size
+$base-font-size: rem(15) !default;
+
+// Font Weight
+$font-weight-400: 400;
+$font-weight-600: 600;
+
+// Border Radius
+$base-border-radius: rem(8) !default;
+
+// Box-Shadow
+$base-box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.17), 0px 3.75998px 2.92443px rgba(0, 0, 0, 0.122205), 0px 2.01027px 1.56354px rgba(0, 0, 0, 0.101338), 0px 1.12694px 0.876509px rgba(0, 0, 0, 0.085),
+  0px 0.598509px 0.465507px rgba(0, 0, 0, 0.0686618), 0px 0.249053px 0.193708px rgba(0, 0, 0, 0.0477948);
