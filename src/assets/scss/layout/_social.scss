@@ -2,6 +2,7 @@
 
 .social {
   align-self: flex-end;
+  margin-bottom: rem(70);
 
   &__group {
     display: flex;
@@ -41,6 +42,16 @@
         clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
         white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
       }
+
+      @include breakpoint-max(sm) {
+        width: rem(35);
+        height: rem(35);
+        font-size: rem(17);
+      }
     }
+  }
+
+  @include breakpoint-max(md) {
+    align-self: center;
   }
 }

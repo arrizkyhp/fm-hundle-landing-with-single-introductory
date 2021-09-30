@@ -10,6 +10,10 @@
   &__image {
     justify-self: flex-start;
     @include max-width(700);
+
+    @include breakpoint-max(xl) {
+      @include max-width(500);
+    }
   }
 
   &__content {
@@ -20,6 +24,14 @@
       font-size: rem(40);
       @include max-width(440);
       margin-bottom: rem(20);
+
+      @include breakpoint-max(xl) {
+        font-size: rem(35);
+      }
+
+      @include breakpoint-max(sm) {
+        font-size: rem(26);
+      }
     }
 
     &__desc {
@@ -28,5 +40,21 @@
       font-size: rem(18);
       margin-bottom: rem(25);
     }
+
+    @include breakpoint-max(md) {
+      @include flex-centering();
+      align-self: center;
+    }
+  }
+
+  @include breakpoint-max(md) {
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    gap: rem(40);
+  }
+
+  @include breakpoint-max(sm) {
+    margin-bottom: rem(70);
   }
 }

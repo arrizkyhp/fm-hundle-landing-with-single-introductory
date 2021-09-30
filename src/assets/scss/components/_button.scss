@@ -15,4 +15,8 @@
     background: $soft-magenta;
     color: $white;
   }
+
+  @include breakpoint-max(sm) {
+    padding: rem(10) rem(78.5);
+  }
 }
