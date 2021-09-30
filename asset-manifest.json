@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fm-hundle-landing-with-single-introductory/static/css/main.03384384.chunk.css",
+    "main.js": "/fm-hundle-landing-with-single-introductory/static/js/main.9c73108c.chunk.js",
+    "main.js.map": "/fm-hundle-landing-with-single-introductory/static/js/main.9c73108c.chunk.js.map",
+    "runtime-main.js": "/fm-hundle-landing-with-single-introductory/static/js/runtime-main.f916a158.js",
+    "runtime-main.js.map": "/fm-hundle-landing-with-single-introductory/static/js/runtime-main.f916a158.js.map",
+    "static/js/2.005b2498.chunk.js": "/fm-hundle-landing-with-single-introductory/static/js/2.005b2498.chunk.js",
+    "static/js/2.005b2498.chunk.js.map": "/fm-hundle-landing-with-single-introductory/static/js/2.005b2498.chunk.js.map",
+    "index.html": "/fm-hundle-landing-with-single-introductory/index.html",
+    "static/css/main.03384384.chunk.css.map": "/fm-hundle-landing-with-single-introductory/static/css/main.03384384.chunk.css.map",
+    "static/js/2.005b2498.chunk.js.LICENSE.txt": "/fm-hundle-landing-with-single-introductory/static/js/2.005b2498.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/fm-hundle-landing-with-single-introductory/static/media/bg-mobile.41ba0830.svg",
+    "static/media/illustration-mockups.264994a5.svg": "/fm-hundle-landing-with-single-introductory/static/media/illustration-mockups.264994a5.svg",
+    "static/media/logo.2b3c07e4.svg": "/fm-hundle-landing-with-single-introductory/static/media/logo.2b3c07e4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f916a158.js",
+    "static/js/2.005b2498.chunk.js",
+    "static/css/main.03384384.chunk.css",
+    "static/js/main.9c73108c.chunk.js"
+  ]
+}
