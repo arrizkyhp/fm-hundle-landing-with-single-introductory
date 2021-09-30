@@ -1,5 +1,32 @@
 @use "../utils" as *;
 
 .hero {
-  color: aqua;
+  @include flex-centering();
+  flex-direction: row;
+  gap: rem(50);
+  margin-bottom: rem(40);
+  align-self: flex-start;
+
+  &__image {
+    justify-self: flex-start;
+    @include max-width(700);
+  }
+
+  &__content {
+    padding-top: rem(40);
+    align-self: flex-start;
+
+    &__title {
+      font-size: rem(40);
+      @include max-width(440);
+      margin-bottom: rem(20);
+    }
+
+    &__desc {
+      @include max-width(517);
+      font-family: $secondary-font;
+      font-size: rem(18);
+      margin-bottom: rem(25);
+    }
+  }
 }

@@ -15,6 +15,14 @@
   background-color: #e882e8;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
 html {
   font-style: 100%;
   -webkit-box-sizing: border-box;
@@ -44,15 +52,130 @@ body {
   min-height: 100vh;
   height: 100%;
   font-family: "Poppins", sans-serif;
+  background: url(assets/images/bg-desktop.svg) #674baf;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
 }
 
-.card {
-  background-color: salmon;
+.btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #674baf;
+  padding: 0.9375rem 3.75rem;
+  font-size: 1.125rem;
+  border-radius: 3.125rem;
+  -webkit-box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.17), 0px 3.75998px 2.92443px rgba(0, 0, 0, 0.122205), 0px 2.01027px 1.56354px rgba(0, 0, 0, 0.101338), 0px 1.12694px 0.876509px rgba(0, 0, 0, 0.085), 0px 0.598509px 0.465507px rgba(0, 0, 0, 0.0686618), 0px 0.249053px 0.193708px rgba(0, 0, 0, 0.0477948);
+          box-shadow: 0px 9px 7px rgba(0, 0, 0, 0.17), 0px 3.75998px 2.92443px rgba(0, 0, 0, 0.122205), 0px 2.01027px 1.56354px rgba(0, 0, 0, 0.101338), 0px 1.12694px 0.876509px rgba(0, 0, 0, 0.085), 0px 0.598509px 0.465507px rgba(0, 0, 0, 0.0686618), 0px 0.249053px 0.193708px rgba(0, 0, 0, 0.0477948);
+  cursor: pointer;
+}
+.btn:hover {
+  background: #e882e8;
+  color: #fff;
+}
+
+.logo {
+  width: 100%;
+  max-width: 12.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 4.375rem;
+  padding-top: 1.875rem;
 }
 
 .hero {
-  color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  gap: 3.125rem;
+  margin-bottom: 2.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.hero__image {
+  justify-self: flex-start;
+  width: 100%;
+  max-width: 43.75rem;
+}
+.hero__content {
+  padding-top: 2.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.hero__content__title {
+  font-size: 2.5rem;
+  width: 100%;
+  max-width: 27.5rem;
+  margin-bottom: 1.25rem;
+}
+.hero__content__desc {
+  width: 100%;
+  max-width: 32.3125rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  margin-bottom: 1.5625rem;
+}
+
+.social {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.social__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.9375rem;
+}
+.social__group .fa {
+  position: relative;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  font-size: 1.25rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 3.125rem;
+  color: #fff;
+}
+.social__group .fa:hover {
+  border: 0.0625rem solid #e882e8;
+  color: #e882e8;
+}
+.social__group .fa svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.social__group .fa .visually-hidden {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  height: 0.0625rem;
+  width: 0.0625rem;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px);
+  /*maybe deprecated but we need to support legacy browsers */
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap;
+  /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 }
 
 main {
@@ -69,5 +192,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 2.5rem auto;
+  width: 100%;
+  max-width: 79.125rem;
 }
 /*# sourceMappingURL=style.css.map */

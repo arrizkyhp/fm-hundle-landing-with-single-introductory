@@ -27,5 +27,8 @@ body {
   min-height: 100vh;
   height: 100%;
   font-family: $base-font;
+  background: url(assets/images/bg-desktop.svg) $violet;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
 }

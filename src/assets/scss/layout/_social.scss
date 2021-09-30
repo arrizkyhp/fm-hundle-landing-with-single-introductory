@@ -1,0 +1,46 @@
+@use "../utils" as *;
+
+.social {
+  align-self: flex-end;
+
+  &__group {
+    display: flex;
+    gap: rem(15);
+
+    .fa {
+      position: relative;
+      width: rem(45);
+      height: rem(45);
+      font-size: rem(20);
+      border: rem(1) solid $white;
+      border-radius: rem(50);
+      color: $white;
+
+      &:hover {
+        border: rem(1) solid $soft-magenta;
+        color: $soft-magenta;
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .visually-hidden {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        height: rem(1);
+        width: rem(1);
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+        clip: rect(1px, 1px, 1px, 1px); /*maybe deprecated but we need to support legacy browsers */
+        clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+        white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+      }
+    }
+  }
+}

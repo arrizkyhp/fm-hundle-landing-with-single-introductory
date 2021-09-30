@@ -1,0 +1,9 @@
+@use "../utils" as *;
+
+.logo {
+  width: 100%;
+  max-width: rem(200);
+  align-self: flex-start;
+  margin-bottom: rem(70);
+  padding-top: rem(30);
+}

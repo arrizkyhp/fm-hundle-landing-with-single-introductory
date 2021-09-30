@@ -2,4 +2,7 @@
 
 main {
   @include flex-centering();
+  margin: rem(40) auto;
+  // padding: 0 rem(30);
+  @include max-width(1266);
 }

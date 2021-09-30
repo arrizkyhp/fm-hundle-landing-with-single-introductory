@@ -1,0 +1,18 @@
+@use "../utils" as *;
+
+.btn {
+  border: none;
+  outline: none;
+  background: $white;
+  color: $violet;
+  padding: rem(15) rem(60);
+  font-size: rem(18);
+  border-radius: $base-border-radius;
+  box-shadow: $base-box-shadow;
+  cursor: pointer;
+
+  &:hover {
+    background: $soft-magenta;
+    color: $white;
+  }
+}
